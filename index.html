@@ -292,7 +292,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/11/03/new/" itemprop="url">new</a></h1>
+                <a class="post-title-link" href="/2017/11/03/new/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -344,7 +344,159 @@
       
         
           
+            <hr>
+<h2 id="title-GET和POST的区别"><a href="#title-GET和POST的区别" class="headerlink" title="title: GET和POST的区别"></a>title: GET和POST的区别</h2><h1 id="GET和POST的区别"><a href="#GET和POST的区别" class="headerlink" title="GET和POST的区别"></a>GET和POST的区别</h1><p>最直观的区别就是GET把参数包含在URL中，POST通过request body传递参数  </p>
+<p>‘标准答案’</p>
+<ol>
+<li><p>GET在浏览器回退时是无害的，而POST会再次提交请求。</p>
+</li>
+<li><p>GET产生的URL地址可以被Bookmark，而POST不可以。</p>
+</li>
+<li><p>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</p>
+</li>
+<li><p>GET请求只能进行url编码，而POST支持多种编码方式。</p>
+</li>
+<li><p>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</p>
+</li>
+<li><p>GET请求在URL中传送的参数是有长度限制的，而POST么有。</p>
+</li>
+<li><p>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。</p>
+</li>
+<li><p>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</p>
+</li>
+<li><p>GET参数通过URL传递，POST放在Request body中。</p>
+</li>
+</ol>
+<p>GET和POST是什么？HTTP协议中的两种发送请求的方法。</p>
+<p>HTTP是什么？HTTP是基于TCP/IP的关于数据如何在万维网中如何通信的协议.</p>
+<p>HTTP的底层是TCP/IP。所以GET和POST的底层也是TCP/IP，也就是说，GET/POST都是TCP链接。GET和POST能做的事情是一样一样的。你要给GET加上request body，给POST带上url参数，技术上是完全行的通的。</p>
+<h3 id="GET和POST本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器-服务器的限制，导致他们在应用过程中体现出一些不同。"><a href="#GET和POST本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器-服务器的限制，导致他们在应用过程中体现出一些不同。" class="headerlink" title="GET和POST本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器/服务器的限制，导致他们在应用过程中体现出一些不同。"></a>GET和POST本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器/服务器的限制，导致他们在应用过程中体现出一些不同。</h3><h3 id="GET产生一个TCP数据包；POST产生两个TCP数据包。"><a href="#GET产生一个TCP数据包；POST产生两个TCP数据包。" class="headerlink" title="GET产生一个TCP数据包；POST产生两个TCP数据包。"></a>GET产生一个TCP数据包；POST产生两个TCP数据包。</h3><p>对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；<br>而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/18/icomoon生成字体图标/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="htfire">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="htfire">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/18/icomoon生成字体图标/" itemprop="url">icomoon生成字体图标的方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-18T10:57:50+08:00">
+                2017-10-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="icomoon生成字体图标的方法"><a href="#icomoon生成字体图标的方法" class="headerlink" title="icomoon生成字体图标的方法"></a>icomoon生成字体图标的方法</h2><ol>
+<li>进入icomoon官网 <a href="https://icomoon.io/app/#/select" target="_blank" rel="external">地址</a>.<br><img src="/img/icomoon-1.jpeg" alt="alt text"></li>
+<li>新建图集<br><img src="/img/icomoon-2.jpeg" alt="alt text">  </li>
+<li>上传svg图片 一般由公司UI提供，注意 svg要是path来画，其他格式无法有效生成；上传完毕后，选中上传的svg图 然后点击右下角的 生成字体<br><img src="/img/icomoon-3.jpeg" alt="alt text">  </li>
+<li>生成字体后 这些字体的名字可以自己重新命名修改，最后打包下载，就可以引入到自己的项目当中去了。<br><img src="/img/icomoon-4.jpeg" alt="alt text"></li>
+</ol>
+
           
         
       
@@ -491,131 +643,6 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function Fn() &#123;&#125; </div><div class="line">Fn.prototype.name = &apos;taoge&apos;;</div><div class="line">Fn.prototype.age = 99;</div><div class="line">var fn = new Fn();</div><div class="line">console.log(fn.name);</div><div class="line">console.log(fn.age);</div></pre></td></tr></table></figure>
 <p>Fn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以调用Fn.prototype中的属性。<br>因为每个对象都有一个隐藏的属性<strong>proto</strong>，这个属性引用了创建这个对象的函数的prototype。<br>即fn.(下划线)proto(下划线)   === Fn.prototype。</p>
 <h3 id="四、-隐式原型"><a href="#四、-隐式原型" class="headerlink" title="四、 隐式原型"></a>四、 隐式原型</h3><p>每个对象都有一个<strong>proto</strong>  称为隐式原型<br>每个对象都有一个<strong>proto</strong>属性，指向创建该对象的函数的prototype。<br>Object.prototype确实一个特例——它的<strong>proto</strong>指向的是null。<br>每一个实例也有一个constructor属性，默认调用prototype对象的constructor属性。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/18/icomoon生成字体图标/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="htfire">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="htfire">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/18/icomoon生成字体图标/" itemprop="url">icomoon生成字体图标的方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-18T10:57:50+08:00">
-                2017-10-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="icomoon生成字体图标的方法"><a href="#icomoon生成字体图标的方法" class="headerlink" title="icomoon生成字体图标的方法"></a>icomoon生成字体图标的方法</h2><ol>
-<li>进入icomoon官网 <a href="https://icomoon.io/app/#/select" target="_blank" rel="external">地址</a>.<br><img src="/img/icomoon-1.jpeg" alt="alt text"></li>
-<li>新建图集<br><img src="/img/icomoon-2.jpeg" alt="alt text">  </li>
-<li>上传svg图片 一般由公司UI提供，注意 svg要是path来画，其他格式无法有效生成；上传完毕后，选中上传的svg图 然后点击右下角的 生成字体<br><img src="/img/icomoon-3.jpeg" alt="alt text">  </li>
-<li>生成字体后 这些字体的名字可以自己重新命名修改，最后打包下载，就可以引入到自己的项目当中去了。<br><img src="/img/icomoon-4.jpeg" alt="alt text"></li>
-</ol>
 
           
         
